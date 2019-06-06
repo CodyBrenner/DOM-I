@@ -13,10 +13,10 @@ You have been provided a [JSON object](js/index.js) with all the necessary data 
 
 * [DONE] Create a forked copy of this project.
 * [DONE] Add your project manager as collaborator on Github.
-* [ Clone your OWN version of the repository (Not Lambda's by mistake!).
-* [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-* [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-* [ ] Push commits: git push origin `<firstName-lastName>`.
+* [DONE] Clone your OWN version of the repository (Not Lambda's by mistake!).
+* [DONE] Create a new branch: git checkout -b `<firstName-lastName>`.
+* [DONE] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+* [DONE] Push commits: git push origin `<firstName-lastName>`.
 
 **Follow these steps for completing your project.**
 
