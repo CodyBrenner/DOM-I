@@ -76,6 +76,15 @@ mainImg.src = 'img/header-img.png'
 
  let button = document.querySelector('button');
 button.textContent = 'Get Started'
+button.addEventListener('click', myFunction);
+
+function myFunction(){
+  let buttonClickText = document.createTextNode("");
+  document.getElementsByClassName('text-content')
+  console.log("activated")
+  button.append(buttonClickText);
+  button.textContent = 'Button Clicked'
+}
 
  let linkNav = document.querySelectorAll('h4');
  linkNav [0].textContent = siteContent.nav["nav-item-1"];
