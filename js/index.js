@@ -49,10 +49,26 @@ nav.forEach((link, index) => {
   
 })
 
+// Add Link One
+let newLinkOne = document.createElement("a");
+newLinkOne.textContent = "LinkOne ";
+newLinkOne.href='#';
+newLinkOne.style.color = "dodgerblue";
+newLinkOne.style.fontWeight = "bold"
+let linkActive = document.querySelector('nav');
+// 2
+let newLinkTwo = document.createElement("a");
+newLinkTwo.textContent = "LinkTwo ";
+newLinkTwo.style.color = "red";
+newLinkTwo.style.fontWeight = "bold"
+newLinkTwo.href='#';
+let linkActiveTwo = document.querySelector('nav');
 
-
+linkActive.append(newLinkOne)
+linkActiveTwo.prepend(newLinkTwo)
 
  let headline = document.querySelector('h1')
+ headline.style.color = "crimson"
 headline.innerHTML = 'DOM <br>IS<br> AWESOME'
 
  let mainImg = document.querySelector('#cta-img');
@@ -71,11 +87,16 @@ button.textContent = 'Get Started'
 
 
 let IncludedH4 = document.querySelectorAll('.main-content h4');
-IncludedH4[0].textContent = (siteContent["main-content"]["features-h4"])
-IncludedH4[1].textContent = (siteContent["main-content"]["about-h4"])
-IncludedH4[2].textContent = (siteContent["main-content"]["services-h4"])
-IncludedH4[3].textContent = (siteContent["main-content"]["product-h4"])
-IncludedH4[4].textContent = (siteContent["main-content"]["vision-h4"])
+IncludedH4[0].style.color = "purple"
+IncludedH4[0].textContent = siteContent["main-content"]["features-h4"];
+IncludedH4[1].style.color = "dodgerblue"
+IncludedH4[1].textContent = siteContent["main-content"]["about-h4"];
+IncludedH4[2].style.color = "crimson"
+IncludedH4[2].textContent = siteContent["main-content"]["services-h4"];
+IncludedH4[3].style.color = "gold"
+IncludedH4[3].textContent = siteContent["main-content"]["product-h4"];
+IncludedH4[4].style.color = "Lime"
+IncludedH4[4].textContent = siteContent["main-content"]["vision-h4"];
 
  let IncludedP = document.querySelectorAll('.main-content p');
  IncludedP[0].textContent = siteContent["main-content"]["features-content"]; 
@@ -89,6 +110,7 @@ centerImg.src = 'img/mid-page-accent.jpg'
 
  const contactFooter = document.querySelector('.contact h4')
 contactFooter.textContent = siteContent['contact']['contact-h4'];
+contactFooter.style.color = "DeepPink"
 const footerInfo = document.querySelectorAll('.contact p');
 footerInfo[0].innerHTML = siteContent.contact.address;
 footerInfo[1].textContent = siteContent.contact.phone;
