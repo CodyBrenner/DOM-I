@@ -45,8 +45,12 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 let nav = document.querySelectorAll('nav a');
 nav.forEach((link, index) => {
   link.textContent = siteContent.nav[`nav-item-${index + 1}`]
-  console.log(`This is link ${link}, This is index ${index}`);
+  link.style.color = "green";
+  
 })
+
+
+
 
  let headline = document.querySelector('h1')
 headline.innerHTML = 'DOM <br>IS<br> AWESOME'
